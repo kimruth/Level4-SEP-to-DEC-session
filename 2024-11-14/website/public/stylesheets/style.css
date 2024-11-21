@@ -1,0 +1,69 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.form {
+  width: 300px;
+  margin: 30px auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,9);
+  background: #00b7ff79;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 50%;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  background: crimson;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 160px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: crimson;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 09);
+}
+
+header h1 {
+  margin: 0;
+  color: #ffffff;
+}
+
+header nav a {
+  margin: 0 10px;
+  color: #ffffff;
+  font-size: 16px;
+}

@@ -1,0 +1,12 @@
+<h1>All posts</h1>
+<ul>
+    {{#each post}}
+    <li>
+        <span>Author: {{ author }}</span>
+        <span>Title: {{ title }}</span>
+        <span>Contact: {{ contact }}</span>
+    </li>
+    {{/each}}
+
+    <button type="button" id="button">Click me</button>
+</ul>

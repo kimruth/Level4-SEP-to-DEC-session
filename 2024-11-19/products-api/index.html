@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get products</title>
+</head>
+<body>
+    
+    <script>
+        fetch('http://localhost:3000/products').then(response => response.json())
+        .then(data => {
+            let html = '';
+            data.forEach(product => {
+                html += `
+    <h2>${product.name}</h2>
+    <h2>${product.price}</h2>
+    <h2>${product.description}</h2>
+    <img src=${product.image}>`
+            })
+            document.body.innerHTML=html;
+            
+            console.log(data)})
+        .catch(error => console.log(error))
+    </script>
+</body>
+</html>

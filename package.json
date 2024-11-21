@@ -1,0 +1,19 @@
+{
+  "name": "level4-app",
+  "version": "1.0.0",
+  "description": "First level4 application with node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seven Advanced Accademy",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.7",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1",
+    "nodemailer": "^6.9.16"
+  }
+}
