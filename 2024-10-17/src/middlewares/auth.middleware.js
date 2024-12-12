@@ -1,4 +1,4 @@
-const authService = require('../services/auth.service');
+const authService = require('../services/auth.services');
 
 const verifyLoginBody = async (req, res, next) => {
     const body = req.body;
@@ -123,4 +123,4 @@ if (password !== password_confirm) {
 }
 }
 
-module.exports = { verifyLoginBody, verifyRegisterBody, verifyIfUserIsLogged };
+module.exports = { verifyLoginBody, verifyRegisterBody, verifyIfUserIsLogged, verifyEmail, verifyToken, verifyPassword };

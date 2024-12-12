@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to my app.</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href={{ url_for('home') }}>Home</a>
+                <a href={{ url_for('about_us') }}>About-Us</a>
+                <a href={{ url_for('contact_us') }}>Contact-Us</a>
+                <a href={{ url_for('services') }}>Services</a>
+            </nav>
+        </header>
+        <main>
+            {% block %}{% endblock %}
+        </main>
+        <footer>
+            {% block footer %}
+            &copy; Copyright 2024 &copy; by <a href="http://domain.invalid/">Ruth</a>.
+            {% endblock %}
+        </footer>
+    </body>
+</html>

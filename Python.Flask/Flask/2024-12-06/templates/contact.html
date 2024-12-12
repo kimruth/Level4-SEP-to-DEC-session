@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us page</title>
+</head>
+
+<body>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+                {% for category, message in messages %}
+                    <li style="color: {{'red' if category == 'error' else 'green'}}">{{message}}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <form action="" method="post">
+        <div class="form" style="display: block;">
+            <input type="text" name='name' placeholder="Please enter your name.">
+            <input type="text" name='subject' placeholder="What do you to talk about?">
+            <input type="text" name='content' placeholder="Enter Your text here.">
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

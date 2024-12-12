@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Services</title>
+    </head>
+    <body>
+        {% extends 'base.html' %}
+        {% block content %}
+        <section class="services">
+            <h1>Our Services</h1>
+            <p>Explore our range of sustainable technology solutions tailored to meet your needs.</p>
+            <div class="service-list">
+                {% for service in services %}
+                <div class="service-card">
+                    <div class="service-icon">{{ service.icon }}</div>
+                    <h2>{{ service.title }}</h2>
+                    <p>{{ service.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endblock %}
+        
+        </div>
+
+        <div></div>
+        <footer>
+            {% block footer %}
+            &copy; Copyright 2024 by <a href="http://domain.invalid/">Ruth</a>.
+            {% endblock %}
+        </footer>
+        
+    </body>
+</html>
