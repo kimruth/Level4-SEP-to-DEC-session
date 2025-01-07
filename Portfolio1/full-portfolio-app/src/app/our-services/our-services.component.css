@@ -1,0 +1,22 @@
+.services{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.services .service{
+    margin: 20px;
+}
+
+.services .service a{
+
+    &:hover{
+        padding: 200px;
+        transition: 0.5s ease;
+        box-shadow: 2px black;
+    }
+}
+
+.services .service img{
+    border-radius: 10px;
+}

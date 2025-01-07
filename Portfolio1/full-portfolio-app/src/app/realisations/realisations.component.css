@@ -1,0 +1,46 @@
+.style1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+h2{
+    margin-top: 30px;
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 0, 0, 0.624);
+}
+.style1 .style2{
+    width: 350px;
+    height: 200px;
+    color: white;
+}
+.style1 .app h3{
+    background-color: red;
+}
+.style1 .site h3{
+    background-color: blue; 
+}
+.style1 .style2 .style3{
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.style1 .app .pharma{
+    background-image: url(../../../public/assets/pharma.jpg);
+}
+.style1 .app .royal{
+    background-image: url(../../../public/assets/royal.jpg);
+}
+.style1 .app .immo{
+    background-image: url(../../../public/assets/immo.jpg);
+    background-size: cover;
+}
+.style1 .site .way{
+    background-image: url(../../../public/assets/travel.jpg);
+}
+.style1 .site .food{
+    background-image: url(../../../public/assets/food.jpg);
+}
+.style1 .site .location{
+    background-image: url(../../../public/assets/location.jpg);
+}

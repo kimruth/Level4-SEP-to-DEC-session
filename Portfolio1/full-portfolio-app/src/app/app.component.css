@@ -1,0 +1,40 @@
+nav{
+    display: flex;
+    background-color: blue;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.isactive{
+    background-color: red;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+
+    &:focus{
+        background-color: red;
+    }
+
+    &:hover{
+        color: black;
+        border-radius: 3px;
+        padding: 3px;
+        background-color: red;
+    }
+}
+
+footer{
+    color: white;
+    font: 1em sans-serif;
+    background-color: blue;
+    padding: 17px;
+    margin-top: 30px;
+}

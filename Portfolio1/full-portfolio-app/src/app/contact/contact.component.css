@@ -1,0 +1,61 @@
+main{
+    /* background-color: brown; */
+    width: 50%;
+    margin-left: 300px;
+}
+
+form{
+    /* background-color: blue; */
+    contain: content;
+    margin-left: 90px;
+    width: 70%;
+    margin-top: 30px;
+}
+
+form #message{
+    display: block;
+    display: grid;
+}
+
+form input{
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 5px;
+    padding: 5px;
+    text-align: left;
+    width: 250px;
+    display: flex;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+
+    &:focus{
+        outline: none;
+        border-color: blue;
+    }
+}
+
+form textarea{
+    width: 250px;
+    margin-top: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 100px;
+    transition: border-color 0.3s ease;
+}
+form textarea{
+    
+    &:focus{
+        outline: none;
+        border-color: blue;
+    }
+ }
+
+form button{
+    padding: 5px;
+    background-color: red;
+    border: none;
+    border-radius: 2px;
+}

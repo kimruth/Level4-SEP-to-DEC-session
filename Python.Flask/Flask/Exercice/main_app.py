@@ -1,18 +1,18 @@
-from flask import Flask, Blueprint, render_template, request, url_for, flash, redirect
-from .models import SERVICES
+from flask import Blueprint, render_template, request, url_for, flash, redirect
+from models import SERVICES
 
 
-main = Blueprint('main', __name__)
+main_app = Blueprint('main_app', __name__)
 
-@main.route('/')
+@main_app.route('/')
 def index():
     return render_template("home.html")
 
-@main.route('/about_us')
+@main_app.route('/about_us')
 def about_us():
     return render_template("about_us.html")
 
-@main.route('/contact_us', methods=['GET', 'POST'])
+@main_app.route('/contact_us', methods=['GET', 'POST'])
 def contact_us():
     if request.method == 'POST':
         return render_template("contact_us.html")
@@ -25,6 +25,6 @@ def contact_us():
         return redirect(url_for('contact_us'))
     flash("Thank you for reaching out! We'll get back to you soon.", "success")
 
-@main.route('/services')
+@main_app.route('/services')
 def services():
     return render_template("services.html", servicse=SERVICES)

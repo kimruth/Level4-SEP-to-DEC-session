@@ -1,0 +1,13 @@
+.sections{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.sections .section{
+    margin: 20px;
+}
+
+.sections .section img{
+    border-radius: 5px;
+}

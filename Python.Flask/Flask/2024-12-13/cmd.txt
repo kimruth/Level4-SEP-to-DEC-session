@@ -1,0 +1,19 @@
+Create environment:
+        Linux/macOs: python3 -m venv .venv
+        Windows: python -m venv .venv
+
+Activate the environment:
+        Linux/macOs: . .venv/bin/activate
+        Windows: . .venv\Scripts\activate
+
+Install flask:
+        pip install Flask;
+
+Initialise database migration:
+        flask db init (Only one time in your project);
+
+Generate one migration (Make sure to create the database before running this command):
+        flask db migrate -m "Migration message";
+
+Apply migration in the database:
+        flask db upgrade

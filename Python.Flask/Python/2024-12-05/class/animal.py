@@ -5,8 +5,7 @@ class Animal:
         
     def speak(self):
         print(f"{self.name} say hello to you")
-        
-
+    
 dog = Animal('Waff-Waff', 'dog')
 cat = Animal('Minou', 'cat')
 dog.speak()

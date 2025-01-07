@@ -1,0 +1,17 @@
+.skills{
+    justify-content: space-around;
+    margin-top: 30px;
+    /* background-color: blue; */
+}
+
+.skills .sky{
+    justify-content: space-around;
+    /* background-color: brown; */
+    display: flex;
+}
+
+.skills .ski{
+    margin-top: 30px;
+    justify-content: space-around;
+    display: flex;
+}
